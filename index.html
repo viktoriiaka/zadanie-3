@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+   <input type="text" id="pole"> 
+   <input type="submit" value="Sprawdż" onclick="sprawdz()"/>
+   <p id="wynik"></p>
+   <script type="text/javascript">
+    function sprawdz()
+    {
+        var liczba = document.getElementById("pole").value;
+        if(liczba.length>=8)document.getElementById("wynik").innerHTML="Hasło jest wystarczająco długie";
+        else document.getElementById("wynik").innerHTML="Hasło jest za krótkie";
+       }
+   </script>
+</body>
+</html>
